@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hash.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/txtPlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Clear Text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtClearTextIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPlainText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtPlainText"
+        android:layout_below="@+id/txtPlainText"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="Clear text goes here"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnMD5Hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtClearTextIn"
+        android:layout_alignStart="@+id/etxtClearTextIn"
+        android:layout_below="@+id/etxtClearTextIn"
+        android:text="MD5 Hash" />
+
+    <TextView
+        android:id="@+id/txtMD5Hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMD5Hash"
+        android:layout_alignStart="@+id/btnMD5Hash"
+        android:layout_below="@+id/btnMD5Hash"
+        android:layout_marginTop="12dp"
+        android:text="MD5 hash" />
+
+    <EditText
+        android:id="@+id/etxtMD5Hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMD5Hash"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtMD5Hash"
+        android:layout_below="@+id/txtMD5Hash"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="MD5 hash displayed here"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/btnSHA256Hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtMD5Hash"
+        android:layout_alignStart="@+id/etxtMD5Hash"
+        android:layout_below="@+id/etxtMD5Hash"
+        android:text="SHA-256 Hash" />
+
+    <TextView
+        android:id="@+id/txtSHA256Hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSHA256Hash"
+        android:layout_alignStart="@+id/btnSHA256Hash"
+        android:layout_below="@+id/btnSHA256Hash"
+        android:layout_marginTop="13dp"
+        android:text="SHA-256 hash" />
+
+    <EditText
+        android:id="@+id/etxtSHA256Hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSHA256Hash"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtSHA256Hash"
+        android:layout_below="@+id/txtSHA256Hash"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="SHA-256 hash displayed here"
+        android:inputType="none" />
+
+</RelativeLayout>
